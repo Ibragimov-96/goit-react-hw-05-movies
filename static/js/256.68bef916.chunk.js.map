@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/256.68bef916.chunk.js","mappings":"0JAGA,UAHgB,WACZ,OAAO,mKACV,C","sources":["pages/NotFound/NotFound.jsx"],"sourcesContent":["const NotFound =()=>{\n    return(<h2>Такого пути не существует</h2>)\n}\nexport default NotFound"],"names":[],"sourceRoot":""}
