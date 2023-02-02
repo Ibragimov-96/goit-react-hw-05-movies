@@ -1,5 +1,5 @@
 import { Input, Btn, Form, LinkFilm, Films } from './MoviesStyle';
-import { Outlet, useLocation, useSearchParams } from 'react-router-dom';
+import { useLocation, useSearchParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import img from '../../img/error.png';
@@ -82,7 +82,7 @@ const Movies = () => {
           })}
         </Films>
       </div>
-      <Outlet />
+      
     </>
   );
 };

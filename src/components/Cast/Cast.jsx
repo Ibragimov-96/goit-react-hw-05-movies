@@ -1,4 +1,4 @@
-import { useParams, Outlet } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { CastList } from './CastStyle';
 import img from '../../img/error.png';
@@ -45,7 +45,7 @@ const Cast = () => {
           );
         })}
       </CastList>
-      <Outlet />
+     
     </>
   );
 };

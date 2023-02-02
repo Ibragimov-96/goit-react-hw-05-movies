@@ -1,4 +1,4 @@
-import { useParams, Outlet } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { Author } from './ReviewsStyle';
 import KEY from 'Key';
@@ -39,7 +39,7 @@ const Reviews = () => {
           );
         })}
       </ul>
-      <Outlet />
+      
     </>
   );
 };

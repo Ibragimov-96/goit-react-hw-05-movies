@@ -6,9 +6,9 @@ import { lazy } from 'react';
 const Home = lazy(() => import('pages/Home/Home'));
 const Movies = lazy(() => import('pages/Movies/Movies'));
 const MovieDetails = lazy(() => import('pages/MovieDetails/MovieDetails.jsx'));
-const Cast = lazy(() => import('pages/Cast/Cast.jsx'));
-const Reviews = lazy(() => import('pages/Reviews/Reviews.jsx'));
-const NotFound = lazy(() => import('pages/NotFound/NotFound.jsx'))
+const Cast = lazy(() => import('components/Cast/Cast.jsx'));
+const Reviews = lazy(() => import('components/Reviews/Reviews.jsx'));
+// const NotFound = lazy(() => import('pages/NotFound/NotFound.jsx'))
 export const App = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ export const App = () => {
             <Route path="reviews" element={<Reviews />} />
           </Route>
         </Route>
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Header />} />
       </Routes>
       <ToastContainer position="top-right" autoClose={2000} />
     </div>
