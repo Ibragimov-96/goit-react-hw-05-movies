@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import KEY from 'Key';
-import { TopList, LinkFilms } from './HomeStyle';
+import { TopList, LinkFilms,Header } from './HomeStyle';
 const Home = () => {
   const [films, setFilms] = useState([]);
   
@@ -23,12 +23,15 @@ const Home = () => {
   return (
     <>
       <div>
-        <h1>Tranding to day</h1>
+        <Header >Tranding to day</Header>
         <TopList>
           {films.map(film => {
+            console.log(film)
             return (
               <li key={film.id}>
-                <LinkFilms to={`/movies/${film.id}`}>{film.title}</LinkFilms>
+                <LinkFilms to={`/movies/${film.id}`}>
+                  <img src={`https://image.tmdb.org/t/p/w300/${film.poster_path}`} alt="" />
+                  {film.title}</LinkFilms>
               </li>
             );
           })}
